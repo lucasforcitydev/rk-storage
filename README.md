@@ -292,6 +292,8 @@ O projeto foi desenvolvido como uma aplicação prática para trabalhar conceito
 * Deploy em VPS
 * Gerenciamento de processos com PM2
 * Testes automatizados
+* Integração contínua
+* Qualidade de Software
 
 Além do desenvolvimento, o projeto também serviu como experiência prática para aplicação de conceitos de **Qualidade de Software e QA**.
 
