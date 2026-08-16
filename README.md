@@ -1,5 +1,7 @@
 # RK Storage
 
+[![Backend Tests](https://github.com/lucasforcitydev/rk-storage/actions/workflows/tests.yml/badge.svg)](https://github.com/lucasforcitydev/rk-storage/actions/workflows/tests.yml)
+
 **Sistema web para compartilhamento de fotos e vídeos em eventos.**
 
 O RK Storage permite que convidados enviem fotos e vídeos diretamente pelo celular para uma galeria compartilhada, mantendo os arquivos em sua qualidade original.
