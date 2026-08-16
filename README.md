@@ -174,6 +174,43 @@ Realiza o upload de fotos e vídeos para o servidor.
 * WEBM
 
 ---
+### Testes automatizados
+
+O backend possui testes automatizados utilizando Jest e Supertest.
+
+Atualmente são realizados 5 testes, cobrindo os principais comportamentos da API:
+
+### Teste	Resultado
+
+GET /files retorna HTTP 200	Passou
+GET /files retorna uma lista de arquivos	Passou
+POST /upload aceita imagem válida	Passou
+POST /upload aceita múltiplos arquivos	Passou
+POST /upload rejeita extensão inválida	Passou
+
+### Executar os testes
+
+Na pasta backend:
+
+- npm test
+
+Resultado atual:
+
+Test Suites: 2 passed, 2 total
+Tests:       5 passed, 5 total
+
+
+### Estrutura dos testes
+
+backend/
+└── tests/
+    ├── files.test.js
+    ├── upload.test.js
+    └── fixtures/
+        ├── arquivo.txt
+        └── imagem.teste.jpg
+
+Os testes verificam tanto o comportamento dos endpoints quanto as regras de validação de arquivos da API.
 
 ## Estrutura do projeto
 
