@@ -1,10 +1,20 @@
 const multer = require("multer");
 const path = require("path");
 const crypto = require("crypto");
+const fs = require("fs");
+
+const pastaUploads = path.join(
+    __dirname,
+    "../../uploads"
+);
+
+if (!fs.existsSync(pastaUploads)) {
+    fs.mkdirSync(pastaUploads, { recursive: true });
+}
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, "uploads/");
+        cb(null, pastaUploads);
     },
 
     filename: (req, file, cb) => {
