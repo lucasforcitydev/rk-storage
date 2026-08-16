@@ -10,7 +10,7 @@ O RK Storage permite que convidados enviem fotos e vídeos diretamente pelo celu
 
 ### Tela Inicial
 
-![Galeria do RK Storage](screenshots/Tela.inicial.png.png)
+![Galeria do RK Storage](screenshots/Tela.inicial.png)
 
 ### Galeria
 
@@ -18,7 +18,7 @@ O RK Storage permite que convidados enviem fotos e vídeos diretamente pelo celu
 
 ### Painel Administrador
 
-![Visualização de arquivos](screenshots/inicial.administrador 2.png)
+![Visualização de arquivos](screenshots/inicial.administrador.2.png)
 
 ---
 
