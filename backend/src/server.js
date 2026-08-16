@@ -22,7 +22,6 @@ app.use("/upload", uploadRoutes);
 app.use("/files", filesRoutes);
 
 app.use((err, req, res, next) => {
-
     console.error(err);
 
     return res.status(500).json({
@@ -31,15 +30,14 @@ app.use((err, req, res, next) => {
             err.message ||
             "Ocorreu um erro interno no servidor."
     });
-
 });
 
 const PORT = process.env.PORT || 3001;
 
-app.listen(PORT, () => {
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Servidor rodando na porta ${PORT}`);
+    });
+}
 
-    console.log(
-        `Servidor rodando na porta ${PORT}`
-    );
-
-});
+module.exports = app;
